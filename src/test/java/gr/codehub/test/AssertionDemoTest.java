@@ -2,6 +2,8 @@ package gr.codehub.test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 import org.junit.jupiter.api.Test;
 
@@ -37,6 +39,18 @@ public class AssertionDemoTest {
         boolean[] expected = {true, false, false};
         assertArrayEquals(expected, gameResults());
     }
+    
+    @Test
+    void exampleTest05() {
+        String text = "Hello";
+        assertTrue(text.charAt(0) == 'H', "First character must be H for " + text);
+        assertFalse(text.charAt(1) == 'e', "Second character must not be 'e' for " + text);
+    }
+    
+    
+    
+    
+    
     
     
     
