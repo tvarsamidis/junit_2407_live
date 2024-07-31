@@ -4,7 +4,7 @@ package gr.codehub.test;
 public class Main {
 
     public static int myLuckyNumber() {
-        return 2;
+        return 1;
     }
     
     public static void main(String[] args) {
